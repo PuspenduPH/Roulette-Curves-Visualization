@@ -60,9 +60,8 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
         <td><img src="https://github.com/user-attachments/assets/298d4dd9-b440-4915-9875-ea92f2c13b3b" width="300"/></td>
         <td><img src="https://github.com/user-attachments/assets/cf42eef1-1489-4265-80e7-999889b13bfa" width="300"/></td>
       </tr>
-  </table>
+    </table>
 
-    
   - **Rose Curves**
     
     <table>
@@ -74,7 +73,7 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
         <td><img src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="500"/></td>
         <td><img src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="500"/></td>
       </tr>
-  </table>
+    </table>
 
 
   - **Ellipses**
@@ -104,7 +103,7 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
               <td><img src="https://github.com/user-attachments/assets/e0d39052-2edc-4981-a679-3319a6f4a6ea" width="250"/></td>
               <td><img src="https://github.com/user-attachments/assets/90c39305-4eef-4fe3-afe9-20e3ed89afd3" width="250"/></td>
             </tr>
-        </table>
+          </table>
         
 
       - *Rational and Irrational n*
@@ -134,7 +133,7 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
           <td><img src="https://github.com/user-attachments/assets/ed007158-bce3-4e78-9cc2-eb127ad3aa9d" width="500"/></td>
           <td><img src="https://github.com/user-attachments/assets/61c8c98e-e83e-4883-a376-f70e3dd9dc5a" width="500"/></td>
         </tr>
-    </table>
+      </table>
     
     
   - **Circles**
@@ -169,8 +168,8 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
 roulette-curves/
 │
 ├── 📓 RouletteCurves.ipynb          # Main Jupyter notebook
-├── 📁 ANIMATION/                    # GIFs and MP4s of animated curves
-├── 📁 IMAGE/                        # Static images used in README or notebook
+├── 📁 ANIMATIONS/                   # GIFs and MP4s of animated curves
+├── 📁 IMAGES/                       # Static images used in README or notebook
 ├── 📄 README.md                     # Project documentation
 ├── 📄 requirements.txt              # Required Python packages
 ```
