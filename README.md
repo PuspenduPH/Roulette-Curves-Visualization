@@ -48,16 +48,16 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
 
     | Integer n                                                                                        | Rational n                                                                                        |
     | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-    | <img src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="500"/> | <img src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="500"/> |
+    | <img src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="400"/> | <img src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="400"/> |
 
 
   - **Ellipses**
 
-    <img src="https://github.com/user-attachments/assets/41342679-1cbc-44a3-8d34-0b67cd68f746" width="500"/>
+    <img src="https://github.com/user-attachments/assets/41342679-1cbc-44a3-8d34-0b67cd68f746" width="400"/>
 
 - Investigated how the ratio $n = \frac{a}{b}$ (fixed to rolling circle radius) influences shape, periodicity, and closure.
 
-  <img src="https://github.com/user-attachments/assets/2d2c9864-95ff-4dd8-a7cb-5cd6f045098b" width="500"/>
+  <img src="https://github.com/user-attachments/assets/2d2c9864-95ff-4dd8-a7cb-5cd6f045098b" width="400"/>
 
 ### 🔴 **Epitrochoids**
 - Rolling of a circle **outside** another circle.
@@ -81,20 +81,20 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
 
       | Integer n                                                                                        | Rational n                                                                                        |
       | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-      | <img src="https://github.com/user-attachments/assets/ed007158-bce3-4e78-9cc2-eb127ad3aa9d" width="500"/> | <img src="https://github.com/user-attachments/assets/61c8c98e-e83e-4883-a376-f70e3dd9dc5a" width="500"/> |
+      | <img src="https://github.com/user-attachments/assets/ed007158-bce3-4e78-9cc2-eb127ad3aa9d" width="400"/> | <img src="https://github.com/user-attachments/assets/61c8c98e-e83e-4883-a376-f70e3dd9dc5a" width="400"/> |
 
 
   - **Circles**
 
-    <img src="https://github.com/user-attachments/assets/7a7b4102-5a37-4ed0-af74-d0ae62af937c" width="500"/>
+    <img src="https://github.com/user-attachments/assets/7a7b4102-5a37-4ed0-af74-d0ae62af937c" width="400"/>
 
   - **Limacons**
 
-    <img src="https://github.com/user-attachments/assets/7bc4d9af-0c7a-4296-9efe-cc6fdac1365a" width="500"/>
+    <img src="https://github.com/user-attachments/assets/7bc4d9af-0c7a-4296-9efe-cc6fdac1365a" width="400"/>
 
 - Explored behaviour under different values of $n$.
 
-  <img src="https://github.com/user-attachments/assets/0dffce75-be2e-47fd-9570-9240392a7a0d" width="500"/>
+  <img src="https://github.com/user-attachments/assets/0dffce75-be2e-47fd-9570-9240392a7a0d" width="400"/>
 
 ### ⏳ **Tautochronic Property of Cycloids**
 - Showcased the unique property where all particles take the **same time** to reach the bottom of an inverted cycloid, regardless of starting point.
@@ -111,6 +111,7 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
 
 ## 📁 Repository Structure
 
+```text
 roulette-curves/
 │
 ├── 📓 RouletteCurves.ipynb          \# Main Jupyter notebook
@@ -118,8 +119,7 @@ roulette-curves/
 ├── 📁 IMAGES/                       \# Static images used in README or notebook
 ├── 📄 README.md                     \# Project documentation
 ├── 📄 requirements.txt              \# Required Python packages
-
-````
+```
 
 
 ## 🛠️ Installation & Usage
@@ -127,9 +127,9 @@ roulette-curves/
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/PuspenduPH/Roulette-Curves-Visualization.git](https://github.com/PuspenduPH/Roulette-Curves-Visualization.git)
+   git clone https://github.com/PuspenduPH/Roulette-Curves-Visualization.git
    cd Roulette-Curves-Visualization
-````
+   ```
 
 2.  **Install dependencies:**
 
@@ -144,8 +144,6 @@ roulette-curves/
     ```bash
     jupyter notebook RouletteCurves.ipynb
     ```
-
------
 
 ## 📦 Requirements
 
