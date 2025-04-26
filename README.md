@@ -2,7 +2,19 @@
 
 Explore the mesmerising world of **roulette curves** — from cycloids to hypotrochoids and epitrochoids — using Python, math, and animations.
 
----
+<table>
+  <tr>
+    <th>Trochoids</th>
+    <th>Hypotrochoids</th>
+    <th>Epitrochoids</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7576344f-e2e4-4dac-a1b8-23162743e65b" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7301e76e-44b7-45a1-ba8a-8358d8c26fe2" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/4cf871f7-ec10-4ad5-aa5a-7d9558623b08" width="300"/></td>
+  </tr>
+</table>
+
 
 ## 📘 Overview
 
@@ -16,18 +28,63 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
 - Rolling of a circle along a **straight line**.
 - Discussed and visualized:
   - **Common Cycloids**
+    
+    <img src="https://github.com/user-attachments/assets/52335bd1-e6b9-4540-b38c-5c084cf40f19" width="700"/>
+
   - **Curtate Cycloids**
+    
+    <img src="https://github.com/user-attachments/assets/84a578d5-f600-4017-98cb-5c0061335f1f" width="700"/>
+
   - **Prolate Cycloids**
+    
+    <img src="https://github.com/user-attachments/assets/6e1da39d-c9c8-426b-b5de-8a9f80ba5b15" width="700"/>
+    
+
 - Generalized via a reusable `Trochoids` class.
 - Animated rolling motion with traced paths.
+  
+  <img src="https://github.com/user-attachments/assets/7576344f-e2e4-4dac-a1b8-23162743e65b" width="700"/>
 
 ### 🔵 **Hypotrochoids**
 - Rolling of a circle **inside** another circle.
 - Special cases:
   - **Hypocycloids**
+ 
+    <table>
+    <tr>
+      <th>Integer n</th>
+      <th>Rational n</th>
+      <th>Irrational n</th>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/fee2a7e2-2bd7-4130-b84a-37a8537916bc" width="300"/></td>
+      <td><img src="https://github.com/user-attachments/assets/298d4dd9-b440-4915-9875-ea92f2c13b3b" width="300"/></td>
+      <td><img src="https://github.com/user-attachments/assets/cf42eef1-1489-4265-80e7-999889b13bfa" width="300"/></td>
+    </tr>
+  </table>
+
+    
   - **Rose Curves**
+    
+    <table>
+    <tr>
+      <th>Integer n</th>
+      <th>Rational n</th>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="300"/></td>
+      <td><img src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="300"/></td>
+    </tr>
+  </table>
+
+
   - **Ellipses**
+
+    <img src="https://github.com/user-attachments/assets/41342679-1cbc-44a3-8d34-0b67cd68f746" width="700"/>    
+
 - Investigated how the ratio $n = \frac{a}{b}$ (fixed to rolling circle radius) influences shape, periodicity, and closure.
+
+  <img src="https://github.com/user-attachments/assets/2d2c9864-95ff-4dd8-a7cb-5cd6f045098b" width="700"/>    
 
 ### 🔴 **Epitrochoids**
 - Rolling of a circle **outside** another circle.
