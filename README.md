@@ -2,6 +2,30 @@
 
 Explore the mesmerising world of **roulette curves** — from cycloids to hypotrochoids and epitrochoids — using Python, math, and animations.
 
+<style>
+  .lift-pop:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+  }
+</style>
+
+<style>
+  .zoom-small:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  .zoom-medium:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+  .zoom-large:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+  }
+</style>
+
+
 <table>
   <tr>
     <th>Trochoids</th>
@@ -9,9 +33,9 @@ Explore the mesmerising world of **roulette curves** — from cycloids to hypotr
     <th>Epitrochoids</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/7576344f-e2e4-4dac-a1b8-23162743e65b" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/7301e76e-44b7-45a1-ba8a-8358d8c26fe2" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/4cf871f7-ec10-4ad5-aa5a-7d9558623b08" width="300"/></td>
+    <td><img class="zoom-medium" src="https://github.com/user-attachments/assets/7576344f-e2e4-4dac-a1b8-23162743e65b" width="300"/></td>
+    <td><img class="zoom-medium" src="https://github.com/user-attachments/assets/7301e76e-44b7-45a1-ba8a-8358d8c26fe2" width="300"/></td>
+    <td><img class="zoom-medium" src="https://github.com/user-attachments/assets/4cf871f7-ec10-4ad5-aa5a-7d9558623b08" width="300"/></td>
   </tr>
 </table>
 
@@ -51,27 +75,28 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
  
     <table>
       <tr>
-        <th>Integer n</th>
-        <th>Rational n</th>
-        <th>Irrational n</th>
+        <th style="text-align:center;">Integer n</th>
+        <th style="text-align:center;">Rational n</th>
+        <th style="text-align:center;">Irrational n</th>
       </tr>
       <tr>
-        <td><img src="https://github.com/user-attachments/assets/fee2a7e2-2bd7-4130-b84a-37a8537916bc" width="300"/></td>
-        <td><img src="https://github.com/user-attachments/assets/298d4dd9-b440-4915-9875-ea92f2c13b3b" width="300"/></td>
-        <td><img src="https://github.com/user-attachments/assets/cf42eef1-1489-4265-80e7-999889b13bfa" width="300"/></td>
+        <td><img class="lift-pop" src="https://github.com/user-attachments/assets/fee2a7e2-2bd7-4130-b84a-37a8537916bc" width="300"/></td>
+        <td><img class="lift-pop" src="https://github.com/user-attachments/assets/298d4dd9-b440-4915-9875-ea92f2c13b3b" width="300"/></td>
+        <td><img class="lift-pop" src="https://github.com/user-attachments/assets/cf42eef1-1489-4265-80e7-999889b13bfa" width="300"/></td>
       </tr>
-    </table>
+  </table>
+
 
   - **Rose Curves**
     
     <table>
       <tr>
-        <th>Integer n</th>
-        <th>Rational n</th>
+        <th style="text-align:center;">Integer n</th>
+        <th style="text-align:center;">Rational n</th>
       </tr>
       <tr>
-        <td><img src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="500"/></td>
-        <td><img src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="500"/></td>
+        <td><img class="lift-pop" src="https://github.com/user-attachments/assets/2c1a2b27-6fb6-4a2d-872b-196a6e6055af" width="500"/></td>
+        <td><img class="lift-pop" src="https://github.com/user-attachments/assets/f096f816-72f0-424e-b1bd-a540275d3b03" width="500"/></td>
       </tr>
     </table>
 
@@ -92,16 +117,16 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
    
           <table>
             <tr>
-              <th>Cardiod (n=1)</th>
-              <th>Nephroid (n=2)</th>
-              <th>Trefoiloid (n=3)</th>
-              <th>Ranunculoid (n=4)</th>
+              <th style="text-align:center;">Cardiod (n=1)</th>
+              <th style="text-align:center;">Nephroid (n=2)</th>
+              <th style="text-align:center;">Trefoiloid (n=3)</th>
+              <th style="text-align:center;">Ranunculoid (n=4)</th>
             </tr>
             <tr>
-              <td><img src="https://github.com/user-attachments/assets/3517be40-94db-41a8-848b-4290c4a97127" width="250"/></td>
-              <td><img src="https://github.com/user-attachments/assets/a75e295a-a760-4831-8e3c-3a988f583245" width="250"/></td>
-              <td><img src="https://github.com/user-attachments/assets/e0d39052-2edc-4981-a679-3319a6f4a6ea" width="250"/></td>
-              <td><img src="https://github.com/user-attachments/assets/90c39305-4eef-4fe3-afe9-20e3ed89afd3" width="250"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/3517be40-94db-41a8-848b-4290c4a97127" width="250"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/a75e295a-a760-4831-8e3c-3a988f583245" width="250"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/e0d39052-2edc-4981-a679-3319a6f4a6ea" width="250"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/90c39305-4eef-4fe3-afe9-20e3ed89afd3" width="250"/></td>
             </tr>
           </table>
         
@@ -110,14 +135,14 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
    
           <table>
             <tr>
-              <th>Integer n</th>
-              <th>Rational n</th>
-              <th>Irrational n</th>
+              <th style="text-align:center;">Integer n</th>
+              <th style="text-align:center;">Rational n</th>
+              <th style="text-align:center;">Irrational n</th>
             </tr>
             <tr>
-              <td><img src="https://github.com/user-attachments/assets/5117ef8f-3fa1-4082-813c-aceb35eabb5f" width="300"/></td>
-              <td><img src="https://github.com/user-attachments/assets/2359fe00-8c9b-40d0-8574-ffd2058ae0ce" width="300"/></td>
-              <td><img src="https://github.com/user-attachments/assets/17f599f1-fac4-4ca3-bb3e-fbb6a1688c8e" width="300"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/5117ef8f-3fa1-4082-813c-aceb35eabb5f" width="300"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/2359fe00-8c9b-40d0-8574-ffd2058ae0ce" width="300"/></td>
+              <td><img class="lift-pop" src="https://github.com/user-attachments/assets/17f599f1-fac4-4ca3-bb3e-fbb6a1688c8e" width="300"/></td>
             </tr>
           </table>
           
@@ -126,12 +151,12 @@ This repository contains a Jupyter Notebook that dives deep into **roulette curv
  
       <table>
         <tr>
-          <th>Integer n</th>
-          <th>Rational n</th>
+          <th style="text-align:center;">Integer n</th>
+          <th style="text-align:center;">Rational n</th>
         </tr>
         <tr>
-          <td><img src="https://github.com/user-attachments/assets/ed007158-bce3-4e78-9cc2-eb127ad3aa9d" width="500"/></td>
-          <td><img src="https://github.com/user-attachments/assets/61c8c98e-e83e-4883-a376-f70e3dd9dc5a" width="500"/></td>
+          <td><img class="zoom-small" src="https://github.com/user-attachments/assets/ed007158-bce3-4e78-9cc2-eb127ad3aa9d" width="500"/></td>
+          <td><img class="zoom-small" src="https://github.com/user-attachments/assets/61c8c98e-e83e-4883-a376-f70e3dd9dc5a" width="500"/></td>
         </tr>
       </table>
     
