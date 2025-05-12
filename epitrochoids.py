@@ -244,7 +244,8 @@ class Epitrochoids:
 
             # Check if r was flagged as irrational (only if r_values were the input source)
             if r_values_in is not None and i < len(r_was_irrational_flags) and r_was_irrational_flags[i]:
-                 print(f"Input r={self.b_values[i]:.4f} flagged as irrational/complex. Forcing n={n_numeric:.4f} to be treated as irrational.")
+                 print(f"Input r={self.b_values[i]:.4f} flagged as irrational/complex. "
+                       f"Forcing n={n_numeric:.4f} to be treated as irrational.")
                  determined_n_type = "irrational"
                  determined_revolutions = self.max_revolutions_irrational
                  is_forced_irrational = True
@@ -543,7 +544,7 @@ class Epitrochoids:
             self.center_points.append(center_point)
 
         if len(self.b_values) > 0: # Add legend only if there are curves
-            self.ax.legend(loc='upper right', fontsize=9, facecolor='#1C1C1C', framealpha=0.7) # Darker legend box
+            self.ax.legend(loc='upper right', fontsize=9, facecolor='#1C1C1C', framealpha=0.7) 
 
         # Add text annotation for revolution counter if animation > 1 rev
         if self.max_total_revolutions > 1.01: # Add threshold to avoid showing for exactly 1 rev
