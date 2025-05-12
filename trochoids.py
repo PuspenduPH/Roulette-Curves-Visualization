@@ -5,7 +5,6 @@ import os
 import matplotlib.pyplot as plt
 
 
-
 class Trochoids:
     """
     A class to generate and animate trochoids: common, curtate, and prolate.
@@ -86,7 +85,7 @@ class Trochoids:
         self._color = None
         self._theta_vals = None
         self._total_frames = None
-        self._interval_ms = 25 # Milliseconds between frames
+        self._interval_ms = 25
 
     def _trochoid_coordinates(self, theta, d):
         """
@@ -174,7 +173,7 @@ class Trochoids:
         # --- Parameter Setup based on type ---
         if self._trochoid_type == 'common':
             self._distance_param = self.r
-            self._color = 'lime' # Changed color for distinction
+            self._color = 'lime' 
             param_label = 'd=r'
         elif self._trochoid_type == 'curtate':
             if not self.a < self.r:
@@ -192,7 +191,7 @@ class Trochoids:
         # --- Plot Setup ---
         plt.style.use('dark_background')
         self.fig, self.ax = plt.subplots(figsize=(10, 4)) 
-        plt.subplots_adjust(left=0.08, right=0.97, top=0.92, bottom=0.1) # Adjust top/bottom for title/labels
+        plt.subplots_adjust(left=0.08, right=0.97, top=0.92, bottom=0.1)
 
         # Set title
         title = (f"{self._trochoid_type.capitalize()} Cycloid ({param_label})\n"
@@ -209,11 +208,11 @@ class Trochoids:
 
         # --- Calculate Plot Limits ---
         # y coordinates range from r - d to r + d
-        y_min_coord = abs(self.r - self._distance_param)  # Distance from baseline to lowest point
-        y_max_coord = self.r + self._distance_param       # Distance from baseline to highest point
-        y_padding_up = 1.5 * max(self.r, self._distance_param)  # Increased padding for upper limit
-        y_padding_down = 0.25 * self.r                    # Padding for lower limit
-        x_max_coord = self.r * theta_max + max(self.r, self._distance_param) # Furthest x point approx
+        y_min_coord = abs(self.r - self._distance_param)  
+        y_max_coord = self.r + self._distance_param       
+        y_padding_up = 1.5 * max(self.r, self._distance_param) 
+        y_padding_down = 0.25 * self.r                   
+        x_max_coord = self.r * theta_max + max(self.r, self._distance_param) 
         x_min_coord = max(self.r, self._distance_param) # Start from -r or -d
 
         self.ax.set_xlim(-x_min_coord, x_max_coord)
@@ -228,17 +227,17 @@ class Trochoids:
             if np.isclose(val, 0):
                 xtick_labels.append('$0$')
             elif np.isclose(val, 1):
-                 xtick_labels.append(r"$\pi r$") # Show r explicitly for clarity
+                 xtick_labels.append(r"$\pi r$") 
             elif np.isclose(val % 1, 0):
                  xtick_labels.append(f"${int(val)}\\pi r$")
             else:
-                 xtick_labels.append(f"${val:.1f}\\pi r$") # Fallback for non-integers
+                 xtick_labels.append(f"${val:.1f}\\pi r$") 
 
         self.ax.set_xticks(xticks)
         self.ax.set_xticklabels(xtick_labels)
-        self.ax.set_xlabel("Distance Rolled (proportional to $\\theta$)") # Use LaTeX
+        self.ax.set_xlabel("Distance Rolled (proportional to $\\theta$)")
         self.ax.set_ylabel("Y (in units of r)")
-        self.ax.grid(False) # Keep grid off for cleaner look
+        self.ax.grid(False) 
 
         # Base line
         self.ax.axhline(0, color='gray', lw=1.5, ls='--', alpha=0.6)
@@ -251,8 +250,9 @@ class Trochoids:
         self.ax.add_patch(self.circle_patch)
         # Draw a smaller circle marker at the tracing point's distance if not common
         if self._trochoid_type != 'common':
-             distance_marker = patches.Circle((0, self.r), self._distance_param, fill=False, color=self._color, lw=1, ls=':', alpha=0.5)
-             self.ax.add_patch(distance_marker) # Add this marker too
+             distance_marker = patches.Circle((0, self.r), self._distance_param, fill=False, 
+                                              color=self._color, lw=1, ls=':', alpha=0.5)
+             self.ax.add_patch(distance_marker) 
 
         self.point, = self.ax.plot([], [], 'o', color=self._color, ms=8, label='Tracing Point')
         self.radius_line, = self.ax.plot([], [], '--', color=self._color, lw=1, alpha=0.8)
@@ -276,21 +276,21 @@ class Trochoids:
                  fname += ".gif" # Default to gif if extension missing
 
 
-            save_dir = "ANIMATIONS/TROCHOIDS" # Changed directory name
-            os.makedirs(save_dir, exist_ok=True) # Create directory if it doesn't exist
+            save_dir = "ANIMATIONS/TROCHOIDS" 
+            os.makedirs(save_dir, exist_ok=True) 
             full_path = os.path.join(save_dir, fname)
 
             print(f"Saving animation to {os.path.abspath(full_path)}...")
             try:
                 # Use pillow for GIF, ffmpeg needed for mp4/mov (ensure installed)
                 writer = 'pillow' if full_path.lower().endswith('.gif') else 'ffmpeg'
-                self.anim.save(full_path, writer=writer, fps=int(1000 / self._interval_ms), dpi=150) # Adjusted dpi
+                self.anim.save(full_path, writer=writer, fps=int(1000 / self._interval_ms), dpi=150) 
                 print("Animation saved successfully!")
             except Exception as e:
                 print(f"Error saving animation: {e}")
                 print("If saving as MP4/MOV, ensure ffmpeg is installed and in your system's PATH.")
                 print("Showing animation instead...")
-                plt.show() # Fallback to showing if save fails
+                plt.show() 
             finally:
                  plt.close(self.fig) # Close the figure after saving or error
 
@@ -300,7 +300,6 @@ class Trochoids:
         return self.anim
 
 
-# --- Example Usage ---
 
 if __name__ == "__main__":
     # Example 1: Common Cycloid (d=r)
@@ -308,7 +307,7 @@ if __name__ == "__main__":
         trochoid_common = Trochoids(r=1.0, num_revolutions=2, 
                                     save_anim=False
                                     )
-        anim1 = trochoid_common.animate(trochoid_type='common') # Show
+        anim1 = trochoid_common.animate(trochoid_type='common')
     except ValueError as e:
         print(f"Error creating common trochoid: {e}")
 
