@@ -453,7 +453,7 @@ class Hypotrochoids:
         max_reach = max([abs(self.a - b) + h for b, h in zip(self.b_values, self.h_values)], default=self.a)
         # Add padding relative to the larger of fixed radius or max reach
         base_limit = max(self.a, max_reach)
-        self.plot_padding = base_limit * 0.15 # Add 15% padding
+        self.plot_padding = base_limit * 0.15 # Added 15% padding
         self.plot_limit = base_limit + self.plot_padding
 
         # Determine total angle needed based on the maximum revolutions required by any curve
